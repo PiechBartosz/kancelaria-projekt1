@@ -1,0 +1,39 @@
+@use "./colors.scss" as colors;
+@use "./navigation.scss" as navigation;
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/kancelaria-pierwsza.jpg");
+	background-size: cover;
+	background-position: center;
+
+	&__Bg {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	&__text {
+		position: absolute;
+		margin-top: 20rem;
+		text-align: justify;
+		width: 50rem;
+		padding-left: 20rem;
+		font-weight: bold;
+		font-size: 1.8rem;
+		color: #e3dbb3;
+	}
+}
+
+@media (max-width: 568px) {
+	.header__text {
+		padding-left: 5rem;
+		width: 30rem;
+	}
+}

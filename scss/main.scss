@@ -1,0 +1,32 @@
+@use "./colors.scss" as colors;
+@use "./navigation.scss" as navigation;
+@use "./header" as header;
+@use "./components" as components;
+@use "./_burgerMenu" as burgerMenu;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: colors.$mainBodyColor;
+	font-size: 1.6rem;
+}
+html {
+	font-size: 10px;
+	color: colors.$textColor;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: colors.$textColor;
+}
+
+li {
+	list-style: none;
+}

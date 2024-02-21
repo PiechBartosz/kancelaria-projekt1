@@ -1,0 +1,231 @@
+.navigation {
+  position: fixed;
+  padding: 0 2rem;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+}
+.navigation__items {
+  display: flex;
+  flex-direction: row;
+}
+.navigation__item {
+  padding: 1rem;
+  font-weight: bold;
+}
+.navigation__item a {
+  border-bottom: 2px solid transparent;
+  transition: color 1s ease;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.navigation__logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navigation__logo a {
+  color: whitesmoke;
+}
+.navigation__logo a span {
+  color: #069500;
+}
+
+.navigation__item a:hover {
+  color: #069500;
+}
+
+.navigation-mobile {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-image: url("../img/kancelaria-komorka-tlo.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-100%);
+  transition: all 0.5s cubic-bezier(0.53, 0.53, 0, 0.29);
+  z-index: 1;
+}
+.navigation-mobile__item a {
+  transition: color 1s;
+  color: whitesmoke;
+}
+.navigation-mobile__item {
+  padding: 2rem;
+}
+
+.navigation-mobile-active {
+  transform: translateY(0);
+}
+
+.navigation-mobile__item a:hover {
+  color: #069500;
+}
+
+@keyframes navItemsMobile {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.navItemsAnimation {
+  animation: navItemsMobile 5s both;
+}
+
+@media (min-width: 576px) {
+  .navigation-mobile {
+    font-size: 1.8rem;
+    z-index: 1;
+  }
+  .navigation-mobile__item {
+    padding: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .navigation-mobile {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/kancelaria-pierwsza.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header__Bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header__text {
+  position: absolute;
+  margin-top: 20rem;
+  text-align: justify;
+  width: 50rem;
+  padding-left: 20rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #e3dbb3;
+}
+
+@media (max-width: 568px) {
+  .header__text {
+    padding-left: 5rem;
+    width: 30rem;
+  }
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 100;
+}
+.burger-menu:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-menu__box {
+  position: relative;
+  width: 4rem;
+  height: 3rem;
+}
+.burger-menu__element {
+  position: relative;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+}
+.burger-menu__element::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: width 0.8s;
+}
+.burger-menu__element::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: width 0.5s;
+}
+
+.burger-menu:hover .burger-menu__element::after {
+  width: 40%;
+}
+.burger-menu:hover .burger-menu__element::before {
+  width: 60%;
+}
+
+@media (min-width: 992px) {
+  .burger-menu {
+    display: none;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 10px;
+  color: rgb(60, 57, 57);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(60, 57, 57);
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */

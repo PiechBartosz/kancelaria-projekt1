@@ -9,6 +9,7 @@
   align-items: center;
   height: 8rem;
   width: 100%;
+  z-index: 1000;
 }
 .navigation__items {
   display: flex;
@@ -108,9 +109,14 @@
   justify-content: flex-start;
   height: 100vh;
   width: 100%;
-  background-image: url("../img/kancelaria-pierwsza.jpg");
   background-size: cover;
   background-position: center;
+}
+.header__main {
+  background-image: url("../img/kancelaria-pierwsza.jpg");
+}
+.header__aboutUs {
+  background-image: url("../img/zdjecie-kancelarii.jpg");
 }
 .header__Bg {
   position: absolute;
@@ -135,6 +141,51 @@
     width: 30rem;
   }
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 10px;
+  color: rgb(60, 57, 57);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(60, 57, 57);
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  position: relative;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 10;
+  color: whitesmoke;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -202,30 +253,19 @@
     display: none;
   }
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.section {
+  padding: 4rem 2rem;
 }
-
-body {
-  background-color: whitesmoke;
-  font-size: 1.6rem;
+.section h2 {
+  padding-bottom: 4rem;
+  text-align: center;
 }
-
-html {
-  font-size: 10px;
-  color: rgb(60, 57, 57);
+.section__padding {
+  padding-top: 4rem;
 }
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(60, 57, 57);
-}
-
-li {
-  list-style: none;
+.section__aboutUsText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */

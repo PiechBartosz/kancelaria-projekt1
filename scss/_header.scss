@@ -8,9 +8,16 @@
 	justify-content: flex-start;
 	height: 100vh;
 	width: 100%;
-	background-image: url("../img/kancelaria-pierwsza.jpg");
 	background-size: cover;
 	background-position: center;
+
+	&__main {
+		background-image: url("../img/kancelaria-pierwsza.jpg");
+	}
+
+	&__aboutUs {
+		background-image: url("../img/zdjecie-kancelarii.jpg");
+	}
 
 	&__Bg {
 		position: absolute;

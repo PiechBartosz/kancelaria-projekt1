@@ -33,12 +33,10 @@
 	&__logo {
 		font-weight: bold;
 		font-size: 2rem;
+		color: orangered;
 	}
 
 	&__logo a {
-		color: gold;
-	}
-	&__logo a span {
 		color: colors.$active;
 	}
 }

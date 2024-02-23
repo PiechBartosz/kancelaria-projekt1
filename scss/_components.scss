@@ -32,14 +32,16 @@ h1 {
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	text-transform: uppercase;
+	font-size: 5rem;
 	z-index: 10;
 	color: colors.$mainBodyColor;
 }
 
 h2 {
+	font-size: 4rem;
 	text-transform: uppercase;
 }
 
@@ -47,4 +49,9 @@ h2 {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+img {
+	width: 75%;
+	height: auto;
 }

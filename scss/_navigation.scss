@@ -62,7 +62,7 @@
 	background-position: center;
 	transform: translateY(-100%);
 	transition: all 0.5s cubic-bezier(0.53, 0.53, 0, 0.29);
-	z-index: 1;
+	z-index: 11;
 
 	&__item a {
 		transition: color 1s;

@@ -46,3 +46,28 @@
 	// 	align-items: center;
 	// }
 }
+
+@media (max-width: 576px) {
+	.section {
+		h2 {
+			padding: 3rem 0;
+		}
+
+		&__advisors {
+			margin: 1rem 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__positionReverse {
+			flex-direction: column-reverse;
+		}
+
+		&__adviserDescription {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+}

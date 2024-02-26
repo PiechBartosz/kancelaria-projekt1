@@ -1,0 +1,81 @@
+@use "./colors.scss" as colors;
+
+.specialization {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 40rem;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+
+	&__FirstBg {
+		background-image: url("../img/judge-6395574_1920.jpg");
+	}
+	&__SecondBg {
+		background-image: url("../img/study-2746004_1920\ \(1\).jpg");
+	}
+	&__ThirdBg {
+		background-image: url("../img/hammer-802300_1920.jpg");
+	}
+	&__fourthBg {
+		background-image: url("../img/czwarty.jpg");
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6rem;
+		color: white;
+		z-index: 2;
+	}
+	&__text h3 {
+		padding-bottom: 2rem;
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #e3dbb3;
+	}
+
+	&__shadow {
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.specializationHeader {
+	position: relative;
+	padding: 0 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 5rem;
+	z-index: 10;
+	color: #e3dbb3;
+}
+
+@media (max-width: 576px) {
+	.specialization {
+		height: 60rem;
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.specialization {
+		background-attachment: fixed;
+	}
+}

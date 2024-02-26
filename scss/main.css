@@ -116,6 +116,9 @@
 .header__aboutUs {
   background-image: url("../img/zdjecie-kancelarii.jpg");
 }
+.header__specializations {
+  background-image: url("../img/right-4703934_1920.jpg");
+}
 .header__Bg {
   position: absolute;
   height: 100%;
@@ -137,6 +140,11 @@
   .header__text {
     padding-left: 5rem;
     width: 30rem;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    background-attachment: fixed;
   }
 }
 *,
@@ -313,5 +321,80 @@ img {
   }
   .section__adviserDescription {
     margin-bottom: 2rem;
+  }
+}
+.specialization {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.specialization__FirstBg {
+  background-image: url("../img/judge-6395574_1920.jpg");
+}
+.specialization__SecondBg {
+  background-image: url("../img/study-2746004_1920 (1).jpg");
+}
+.specialization__ThirdBg {
+  background-image: url("../img/hammer-802300_1920.jpg");
+}
+.specialization__fourthBg {
+  background-image: url("../img/czwarty.jpg");
+}
+.specialization__text {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+  z-index: 2;
+}
+.specialization__text h3 {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e3dbb3;
+}
+.specialization__shadow {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.specializationHeader {
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  z-index: 10;
+  color: #e3dbb3;
+}
+
+@media (max-width: 576px) {
+  .specialization {
+    height: 60rem;
+  }
+  .specialization__text {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .specialization {
+    background-attachment: fixed;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,74 @@
+@use "./colors.scss" as colors;
+
+.contact {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	color: whitesmoke;
+
+	h3 {
+		padding: 2rem 2rem;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	&__divider {
+		height: 3px;
+		width: 5rem;
+		background-color: colors.$active;
+	}
+
+	&__text h3 {
+		text-transform: uppercase;
+		padding-bottom: 2rem;
+	}
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__social a {
+		text-transform: lowercase;
+		transition: color 1s ease;
+	}
+	&__social a:hover {
+		color: green;
+	}
+}
+
+.secondPlacement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+@media (min-width: 992px) {
+	.contact {
+		&__divider {
+			height: 5rem;
+			width: 3px;
+		}
+	}
+	.secondPlacement {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 10rem;
+	}
+}

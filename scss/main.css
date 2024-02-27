@@ -53,7 +53,7 @@
   background-position: center;
   transform: translateY(-100%);
   transition: all 0.5s cubic-bezier(0.53, 0.53, 0, 0.29);
-  z-index: 11;
+  z-index: 600;
 }
 .navigation-mobile__item a {
   transition: color 1s;
@@ -323,6 +323,10 @@ img {
     margin-bottom: 2rem;
   }
 }
+.sectionBg {
+  background-color: black;
+}
+
 .specialization {
   position: relative;
   display: flex;
@@ -333,36 +337,17 @@ img {
   background-size: cover;
   background-position: center;
 }
-.specialization__FirstBg {
+.specialization__firstBg {
   background-image: url("../img/judge-6395574_1920.jpg");
 }
-.specialization__SecondBg {
+.specialization__secondBg {
   background-image: url("../img/study-2746004_1920 (1).jpg");
 }
-.specialization__ThirdBg {
+.specialization__thirdBg {
   background-image: url("../img/hammer-802300_1920.jpg");
 }
 .specialization__fourthBg {
   background-image: url("../img/czwarty.jpg");
-}
-.specialization__text {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  color: white;
-  z-index: 2;
-}
-.specialization__text h3 {
-  padding-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #e3dbb3;
 }
 .specialization__shadow {
   position: absolute;
@@ -385,6 +370,27 @@ img {
   color: #e3dbb3;
 }
 
+.text {
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+  z-index: 2;
+}
+
+.text h3 {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e3dbb3;
+}
+
 @media (max-width: 576px) {
   .specialization {
     height: 60rem;
@@ -396,5 +402,69 @@ img {
 @media (min-width: 992px) {
   .specialization {
     background-attachment: fixed;
+  }
+}
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: whitesmoke;
+}
+.contact h3 {
+  padding: 2rem 2rem;
+}
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact__divider {
+  height: 3px;
+  width: 5rem;
+  background-color: #069500;
+}
+.contact__text h3 {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.contact__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__social a {
+  text-transform: lowercase;
+  transition: color 1s ease;
+}
+.contact__social a:hover {
+  color: green;
+}
+
+.secondPlacement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .contact__divider {
+    height: 5rem;
+    width: 3px;
+  }
+  .secondPlacement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
   }
 }/*# sourceMappingURL=main.css.map */

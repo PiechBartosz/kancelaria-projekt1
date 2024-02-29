@@ -43,6 +43,7 @@
 	&__social a {
 		text-transform: lowercase;
 		transition: color 1s ease;
+		color: colors.$mainBodyColor;
 	}
 	&__social a:hover {
 		color: green;

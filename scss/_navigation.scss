@@ -26,6 +26,8 @@
 	&__item a {
 		border-bottom: 2px solid transparent;
 		transition: color 1s ease;
+		font-family: "Lato";
+		font-weight: bold;
 		font-size: 2rem;
 		color: colors.$mainBodyColor;
 	}
@@ -33,11 +35,11 @@
 	&__logo {
 		font-weight: bold;
 		font-size: 2rem;
-		color: orangered;
 	}
 
 	&__logo a {
 		color: colors.$active;
+		font-family: "Marhey";
 	}
 }
 

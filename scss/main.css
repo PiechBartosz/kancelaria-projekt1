@@ -22,16 +22,18 @@
 .navigation__item a {
   border-bottom: 2px solid transparent;
   transition: color 1s ease;
+  font-family: "Lato";
+  font-weight: bold;
   font-size: 2rem;
   color: white;
 }
 .navigation__logo {
   font-weight: bold;
   font-size: 2rem;
-  color: orangered;
 }
 .navigation__logo a {
   color: #069500;
+  font-family: "Marhey";
 }
 
 .navigation__item a:hover {
@@ -157,6 +159,7 @@
 
 body {
   background-color: white;
+  font-family: "Lato", "Marhey", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -442,6 +445,7 @@ img {
 .contact__social a {
   text-transform: lowercase;
   transition: color 1s ease;
+  color: white;
 }
 .contact__social a:hover {
   color: green;

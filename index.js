@@ -21,3 +21,13 @@ const mobileActive = () => {
 burgerBtn.addEventListener("click", mobileActive);
 
 // end navigation action on mobile
+let scrollme = document.querySelector(".navigation");
+let height = window.innerHeight;
+
+window.addEventListener("scroll", function () {
+	if (window.scrollY > height) {
+		scrollme.classList.add("scrolled-nav");
+	} else {
+		scrollme.classList.remove("scrolled-nav");
+	}
+});
